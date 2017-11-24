@@ -1,0 +1,1 @@
+# kapacitor_alert_to_icinga2

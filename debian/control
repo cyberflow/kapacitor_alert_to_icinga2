@@ -1,0 +1,12 @@
+Source: kapacitor-alert-to-icinga2
+Maintainer: Dmitrii Rebryshkin <dr@servers.com>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools, python-all, debhelper, dh-python, python-pytest
+X-Python-Version: >= 2.7
+Standards-Version: 3.9.1
+
+Package: python-kapacitor-alert-to-icinga2
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+Description: plugin for send alert data from kapacitor into Icinga 2

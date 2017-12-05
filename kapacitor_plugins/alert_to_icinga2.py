@@ -2,7 +2,6 @@
 import sys
 import requests
 from argparse import ArgumentParser
-from dateutil import parser
 import time
 import json
 import re
@@ -48,7 +47,7 @@ def main():
     argp = ArgumentParser(
         description='Sends kapacitor event to icinga2 api'
     )
-    argp.add_argument('-V', '--version', action='version', version='0.1')
+    argp.add_argument('-V', '--version', action='version', version='0.2')
     argp.add_argument('-v', '--verbose',
                       action='count',
                       default=0,

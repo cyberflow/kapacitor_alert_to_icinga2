@@ -11,7 +11,7 @@ You can add it as topic-handler:
 ```
 kind: exec
 options:
-  prog: "/path/to/plugin/kapacitor_alert_to_icinga2.py"
+  prog: "/path/to/plugin/alert_to_icinga2.py"
   args:
     - "-u"
     - "user"

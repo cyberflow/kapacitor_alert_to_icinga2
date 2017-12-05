@@ -12,8 +12,8 @@ sys.path.insert(0, parentdir)
 
 @pytest.fixture(scope="module")
 def plugin(request):
-    import kapacitor_alert_to_icinga2
-    return kapacitor_alert_to_icinga2
+    from kapacitor_plugins import alert_to_icinga2
+    return alert_to_icinga2
 
 
 @pytest.mark.parametrize('input, output', [
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     parentdir = os.path.dirname(currentdir)
     file_to_test = os.path.join(
         parentdir,
-        # os.path.basename('.'),
+        os.path.basename('kapacitor_plugins'),
         os.path.basename(ourfilename).replace('test_', '', 1)
     )
     pytest.main([

@@ -3,7 +3,7 @@ override_dh_auto_test:
 	py.test
 
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@ --with python2 --buildsystem=python_distutils
 
 override_dh_auto_install:
-	dh_auto_install --with python2 -O--buildsystem=pybuild -- --install-args "\"--install-scripts=/usr/lib/nagios/plugins/"\"
+	dh_auto_install --with python2 -O--buildsystem=python_distutils -- --install-args "\"--install-scripts=/usr/lib/nagios/plugins/"\"
